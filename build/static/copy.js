@@ -82,7 +82,7 @@ async function loadCanvas(){
     // Set up canvas
     canvas = document.getElementById('output');
     canvas.width = video.videoWidth *.8
-    canvas.height = video.videoHeight *.70
+    canvas.height = video.videoHeight *.60
     ctx = canvas.getContext('2d');
     video.play();
 
