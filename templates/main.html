@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block headextra %}
+<!--<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+
+<script src="{{url_for('static', filename='fft.js')}}"></script>
+<script src="{{url_for('static', filename='copy.js')}}"></script>
+
+
+
+{% endblock %}
+
+
+{% block body %}
+
+
+
+        <table style="width:100%">
+            <tr>
+                <td><canvas id="output" style="display: inline;"></canvas></td>
+                <td>
+                   <!-- <h1 style="text-align: center;">Heartrate </h1>
+                        <canvas id="myChart" height="70%"></canvas> -->
+                           <p id="heartrate">Calibrating...</p>            
+                </td>
+            </tr>
+        </table>
+
+        <video hidden playsinline autoplay></video>
+
+<!-- <p id="heartrate">Calibrating...</p> -->
+
+ <canvas id="myChart" height="70%"></canvas>    
+        
+
+
+
+{% endblock %}

@@ -1,0 +1,178 @@
+::scrollbar {
+    display: none;
+  }
+
+  ::-webkit-scrollbar { 
+    display: none; 
+  }
+
+body {
+  background: #DF1E25;
+}
+
+#galleryWrapper {
+  overflow-x: scroll;
+  position: relative;
+  white-space: nowrap;
+   background: hsla(0, 0%, 88%, 0.73);
+  height: 110px;
+  width: 100%;
+}
+
+
+#imageWrapper {
+  height: 104px;
+  margin: 3px auto 0 auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 90%;
+}
+
+#prevThumb, #nextThumb {
+  position: absolute;
+  top: 30px;
+}
+
+#prevThumb {
+  left: 0;
+}
+
+#nextThumb {
+  right: 0;
+}
+
+button {
+  background: transparent;
+  border: none;
+  color: #DF1E25;
+  cursor: pointer;
+  font-size: 1.4em;
+  height: 40px;
+  opacity: .5;
+  outline: none;
+  width: 40px;
+}
+  button:hover {
+    opacity: 1;
+  }
+
+.pkmn {
+  background: url("http://img.pokemondb.net/sprites/black-white/montage-rby.png");
+  height: 96px;
+  margin: 4px;
+  width: 96px;
+  display: inline-block;
+}
+
+.active {
+  border: 4px solid #DF1E25;
+  border-radius: 10px;
+  margin: 0;
+}
+
+  #p1 {
+    background-position: 0 0;
+  }
+
+  #p2 {
+    background-position: -96px 0;
+  }
+
+  #p3 {
+
+    background-position: -182px 0;
+  }
+
+  #p4 {
+    background-position: -288px 0;
+  }
+
+  #p5 {
+    background-position: -384px 0;
+  }
+
+  #p6 {
+    background-position: -480px 0;
+  }
+
+  #p7 {
+    background-position: -576px 0;
+  }
+
+  #p8 {
+    background-position: -672px 0;
+  }
+
+  #p9 {
+    background-position: -768px 0;
+  }
+
+  #p10 {
+    background-position: -864px 0;
+  }
+
+  #p11 {
+    background-position: -960px 0;
+  }
+
+  #p12 {
+    background-position: -1056px 0;
+  }
+
+  #p13 {
+    background-position: -1152px 0;
+  }
+
+  #p14 {
+    background-position: 0 -96px;
+  }
+
+  #p15 {
+    background-position: -96px -96px;
+  }
+
+  #p16 {
+
+    background-position: -182px -96px;
+  }
+
+  #p17 {
+    background-position: -288px -96px;
+  }
+
+  #p18 {
+    background-position: -384px -96px;
+  }
+
+  #p19 {
+    background-position: -480px -96px;
+  }
+
+  #p20 {
+    background-position: -576px -96px;
+  }
+
+  #p21 {
+    background-position: -672px -96px;
+  }
+
+  #p22 {
+    background-position: -768px -96px;
+  }
+
+  #p23 {
+    background-position: -864px -96px;
+  }
+
+  #p24 {
+    background-position: -960px -96px;
+  }
+
+  #p25 {
+    background-position: -1056px -96px;
+  }
+
+  #p26 {
+    background-position: -1152px -96px;
+  }

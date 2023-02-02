@@ -1,0 +1,19 @@
+
+Got it working on mobile (need to run video.play() in order to get it to work on Safari, autoplay alone doesn't cut it).
+
+added frequency monitoring and got better SNR by removing alpha channel.
+
+
+
+working on 
+1. Safari 
+2. Firefox
+3. chrome
+
+- No need for flash, so burning of finger
+- Uses Fast fourier transform to remove few anamolies
+- google geo tag can be used to capture the details of the user to large extent
+
+
+TODO:
+calculate FFT and the frequency bins based on the curFreq variable.
