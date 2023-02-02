@@ -1,178 +1,182 @@
-::scrollbar {
-    display: none;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
-  ::-webkit-scrollbar { 
-    display: none; 
-  }
-
-body {
-  background: #DF1E25;
-}
-
-#galleryWrapper {
-  overflow-x: scroll;
-  position: relative;
-  white-space: nowrap;
-   background: hsla(0, 0%, 88%, 0.73);
-  height: 110px;
-  width: 100%;
-}
-
-
-#imageWrapper {
-  height: 104px;
-  margin: 3px auto 0 auto;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  width: 90%;
-}
-
-#prevThumb, #nextThumb {
-  position: absolute;
-  top: 30px;
-}
-
-#prevThumb {
-  left: 0;
-}
-
-#nextThumb {
-  right: 0;
-}
-
-button {
-  background: transparent;
-  border: none;
-  color: #DF1E25;
-  cursor: pointer;
-  font-size: 1.4em;
-  height: 40px;
-  opacity: .5;
-  outline: none;
-  width: 40px;
-}
-  button:hover {
-    opacity: 1;
-  }
-
-.pkmn {
-  background: url("http://img.pokemondb.net/sprites/black-white/montage-rby.png");
-  height: 96px;
-  margin: 4px;
-  width: 96px;
-  display: inline-block;
-}
-
-.active {
-  border: 4px solid #DF1E25;
-  border-radius: 10px;
+*{
   margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  line-height: 1.5;
+  transition: all .3s ease-in-out;
+  font-family: "Josefin Sans", Arial;
 }
 
-  #p1 {
-    background-position: 0 0;
-  }
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom right, #38A3A5, #57CC99, #80ED99);
+}
 
-  #p2 {
-    background-position: -96px 0;
-  }
+.card{
+  min-height: 475px;
+  width: 275px;
+  margin: 2rem;
+  border-radius: 15px;
+  background: #02383C;
+}
 
-  #p3 {
+.card .header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  color: #ddd;
+}
 
-    background-position: -182px 0;
-  }
+.card .header .title{
+  font-weight: 300;
+}
 
-  #p4 {
-    background-position: -288px 0;
-  }
+.one .sort{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 14.1px;
+}
 
-  #p5 {
-    background-position: -384px 0;
-  }
+.one .sort .day{
+  padding: 0.4rem 1.2rem;
+  margin: 0 0.1rem;
+  cursor: pointer;
+}
 
-  #p6 {
-    background-position: -480px 0;
-  }
+.one .sort .day.active,
+.one .sort .day:active{
+  background: rgba(210, 255, 213, 0.3);
+  border-radius: 25px;
+}
 
-  #p7 {
-    background-position: -576px 0;
-  }
+::selection{
+  background: rgba(210, 255, 213, 0.3);
+}
 
-  #p8 {
-    background-position: -672px 0;
-  }
+.photo{
+  width: 75px;
+  background: #fff;
+  border-radius: 50%;
+  border: 5px solid cyan;
+  box-shadow: 0 0 20px cyan;
+  margin: 1rem 0;
+}
 
-  #p9 {
-    background-position: -768px 0;
-  }
+.main{
+  width: 85px;
+}
 
-  #p10 {
-    background-position: -864px 0;
-  }
+.profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
 
-  #p11 {
-    background-position: -960px 0;
-  }
+.profile .person{
+  display: flex;
+  margin: 1rem 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-  #p12 {
-    background-position: -1056px 0;
-  }
+.profile .person.first{
+  z-index: 10;
+  transform: translateY(-10%);
+}
 
-  #p13 {
-    background-position: -1152px 0;
-  }
+.first .fa-crown{
+  color: gold;
+  filter: drop-shadow(0px 0px 5px gold);
+}
 
-  #p14 {
-    background-position: 0 -96px;
-  }
+.num{
+  color: white;
+}
 
-  #p15 {
-    background-position: -96px -96px;
-  }
+.fa-caret-up{
+  color: cyan;
+  font-size: 21px;
+}
 
-  #p16 {
+.link{
+  margin: 0.2rem 0;
+  color: #fff;
+  margin-top: -0.3rem;
+  font-size: 13px;
+}
 
-    background-position: -182px -96px;
-  }
+.points{
+  color: cyan;
+  font-size: 17px;
+}
 
-  #p17 {
-    background-position: -288px -96px;
-  }
+.second{
+  margin-right: -0.7rem !important;
+}
 
-  #p18 {
-    background-position: -384px -96px;
-  }
+.third{
+  margin-left: -0.7rem !important;
+}
 
-  #p19 {
-    background-position: -480px -96px;
-  }
+.p_img{
+  width: 50px;
+  background: #fff;
+  border-radius: 50%;
+}
 
-  #p20 {
-    background-position: -576px -96px;
-  }
+.flex{
+  display: flex;
+  align-items: center;
+}
 
-  #p21 {
-    background-position: -672px -96px;
-  }
+.others{
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: center;
+}
 
-  #p22 {
-    background-position: -768px -96px;
-  }
+.info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  background: rgba(210, 255, 213, 0.3);
+}
 
-  #p23 {
-    background-position: -864px -96px;
-  }
+.info .points{
+  margin-left: 0.2rem;
+  margin-right: 1.2rem;
+}
 
-  #p24 {
-    background-position: -960px -96px;
-  }
+.info .link{
+  margin: 0 1rem;
+}
 
-  #p25 {
-    background-position: -1056px -96px;
-  }
+.rank{
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+  flex-direction: column-reverse;
+}
 
-  #p26 {
-    background-position: -1152px -96px;
-  }
+.rank i{
+  margin-top: -5px !important;
+}
+
+.rank .num{
+  margin: 0 !important; 
+}

@@ -14,16 +14,19 @@
     <link rel="stylesheet" href="assets/css/Flowing-Text-Animation-Slider.css">
     <link rel="stylesheet" href="assets/css/hmhub-header.css">
     <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
 
     <script src="/build/static/fft.js"></script>
     <script src="/build/static/copy.js"></script>
+    <script src="/build/static/increment.js"></script>
 </head>
 
 <body>
-    <div class="hstack text-end d-flex flex-row flex-grow-1 justify-content-between justify-content-xl-center align-items-xl-center" style="width: 100%;text-align: justify;position: relative;display: inline-flex;"><img class="d-flex flex-row justify-content-start align-items-start align-content-start align-self-start me-auto" width="100" height="80" src="assets/img/clipboard-image.png" style="width: 140px;height: 40px;margin: 5px;display: inline-flex;text-align: left;position: relative;"><button class="btn btn-primary d-flex flex-row align-items-center" type="button" style="position: relative;height: 40px;width: 110px;display: inline-flex;font-size: 12px;text-align: center;margin: 10px;margin-left: 11px;padding: 10px;">Download App</button></div>
-    <div class="alert alert-success text-center text-sm-center text-md-center text-lg-center text-xl-center text-xxl-center alert-dismissible pulse animated infinite" role="alert"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button><span><strong>Watch Magic</strong> Place your finger directly over your device's Camera. Make sure your arm is stable and make sure the live feed on the left shows a medium-dark red rectangle. If the live feed looks too dark, your ambient light might not be bright enough. Adjust accordingly and enjoy</span></div>
+    <div class="hstack text-end d-flex flex-row flex-grow-1 justify-content-between justify-content-xl-center align-items-xl-center" style="width: 80%;text-align: justify;position: relative;display: inline-flex;"><img class="d-flex flex-row justify-content-start align-items-start align-content-start align-self-start me-auto" width="100" height="80" src="assets/img/clipboard-image.png" style="width: 140px;height: 40px;margin: 5px;display: inline-flex;text-align: left;position: relative;"><button class="btn btn-primary d-flex flex-row align-items-center" type="button" style="position: relative;height: 40px;width: 110px;display: inline-flex;font-size: 12px;text-align: center;margin: 10px;margin-left: 11px;padding: 10px;">Download App</button></div>
+    <div class="alert alert-success text-center text-sm-center text-md-center text-lg-center text-xl-center text-xxl-center alert-dismissible pulse animated infinite" style="width: 90%;margin: 5%;" role="alert"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button><span><strong>Fan Power!</strong> Place your finger over the Camera and make sure a medium-dark red rectangle is seen. Ensure ambient light and cheer for your favourite team</span></div>
     <div class="vstack">
         <div class="container py-4 py-xl-5" style="padding-top: 0px;">
             <div class="row g-0 row-cols-2 row-cols-md-4">
@@ -53,7 +56,7 @@
                 </div>
                 <div class="col">
                     <div class="text-center d-flex flex-column justify-content-center align-items-center py-3">
-                        <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-2 bs-icon">
+                        <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-2 bs-icon" style="background: rgba(189,213,248,0);">
                             <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_ewpty5.json" mode="normal" autoplay="" loop="" style="transform: scale(1.70);"></lottie-player>
                         </div>
                         <div class="px-3">
@@ -62,17 +65,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="text-center d-flex flex-column justify-content-center align-items-center py-3">
-                        <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-2 bs-icon" style="background: rgba(246,248,251,0);">
-                            <lottie-player src="https://assets1.lottiefiles.com/datafiles/5FGDT1tGd6PRFWjrlnK36tsX4dv7kt1ihUMebNma/india.json" mode="normal" style="background: rgba(255,255,255,0);" autoplay="" loop=""></lottie-player>
-                        </div>
-                        <div class="px-3">
-                            <h2 class="fw-bold mb-0">67K</h2>
-                            <p class="mb-0">IND</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="text-center d-flex flex-column justify-content-center align-items-center py-3" onclick="incrementValue()">
+    <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-2 bs-icon" style="background: rgba(246,248,251,0);">
+        <lottie-player src="https://assets1.lottiefiles.com/datafiles/5FGDT1tGd6PRFWjrlnK36tsX4dv7kt1ihUMebNma/india.json" mode="normal" style="background: rgba(255,255,255,0);" autoplay loop></lottie-player>
+    </div>
+    <div class="px-3"><input id="number" class="form-control-plaintext" type="text" value="0" readonly style="width: 100px;color: var(--bs-btn-border-color);font-size: 22px;font-weight: bold;text-align: center;height: 32px;" />
+        <p class="mb-0">IND</p>
+    </div>
+</div>
+
                 <div class="col">
                     <div class="text-center d-flex flex-column justify-content-center align-items-center py-3">
                         <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-2 bs-icon" style="background: rgba(248,250,252,0);">
@@ -90,7 +91,7 @@
     <!--<a class="d-flex justify-content-center align-items-center" href="https://www.google.com/"><img class="img-thumbnail img-fluid d-inline-flex justify-content-center align-items-center align-content-center" src="https://t3.ftcdn.net/jpg/02/31/07/66/360_F_231076694_rxAik9swiCT8WEwHfYXu0noL7K8a382k.jpg" style="width: 100%;" width="100%"></a>-->
 
 <!-- Quiz goes in here -->
-<div class="card text-center d-flex" style="width: 100%;border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;box-shadow: 5px 5px 16px 2px rgba(0,0,0,0.25);margin: 5%;min-width: 280px;max-width: 300px;margin-bottom: 20px;height: 299px;padding: 5%;text-align: center;position: relative;display: flex;">
+<div class="card text-center d-flex" style="width: 100%;border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;box-shadow: 5px 5px 16px 2px rgba(0,0,0,0.25);margin: 5%;min-width: 280px;max-width: 300px;margin-bottom: 20px;margin-left: 45px;height: 400px;padding: 3%;text-align: center;position: relative;display: flex;">
     <div style="width: 100%;height: 200px;background: url('karytonndev_background.jpg') center / contain;border-top-left-radius: 20px;border-top-right-radius: 20px;"></div>
     <div class="card-body d-flex flex-column" style="height: 100%;width: 100%;">
         <div>
@@ -106,59 +107,58 @@
     </div>
 </div>
 
-    <div class="col-auto text-center text-sm-center text-md-center text-lg-center text-xl-center text-xxl-center d-flex justify-content-center align-items-center" style="width: 100%;position: relative;display: inline-block;margin: 10px;">
-        <h1 class="d-inline-flex flex-row rubberBand animated infinite" id="headn" style="text-align: center;background: var(--bs-purple);">LEADERBOARD</h1>
+ 
+   <!-- partial:index.partial.html -->
+    <div class="card one">
+    <div class="header">
+        <i class="arrow fas fa-chevron-left"></i>
+        <h3 class="title">Leaderboard</h3>
+        <div></div>
     </div>
-    <div class="row text-start d-flex float-start justify-content-center align-items-center" style="width: 100%;">
-        <div class="col-md-6 col-xl-3 mb-4">
-            <div class="card shadow border-start-primary py-2">
-                <div class="card-body" style="padding-bottom: 0px;padding-top: 0px;">
-                    <div class="row align-items-center no-gutters">
-                        <div class="col me-2">
-                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span style="font-size: 12px;color: var(--bs-primary);">VINAY</span></div>
-                            <div class="text-dark fw-bold h5 mb-0" style="margin-top: -6px;"><span style="font-size: 14px;"><i class="fas fa-caret-up" style="margin-right: 6px;color: var(--bs-success);font-size: 16px;"></i></span><span style="font-size: 14px;">+3</span><span style="font-size: 10px;margin-left: 12px;color: var(--bs-gray-600);">1325 points</span></div>
-                        </div>
-                        <div class="col-auto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-128 0 512 512" width="1em" height="1em" fill="currentColor" data-bs-toggle="tooltip" data-bss-tooltip="" class="fa-2x" style="color: var(--bs-yellow);font-size: 28px;margin-top: 4px;" title="Votre position dans le classement général est définie en fonction de vos statistiques de pronostiqueur">
-                                <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-                                <path d="M256 448c0 17.67-14.33 32-32 32H32c-17.67 0-32-14.33-32-32s14.33-32 32-32h64V123.8L49.75 154.6C35.02 164.5 15.19 160.4 5.375 145.8C-4.422 131.1-.4531 111.2 14.25 101.4l96-64c9.828-6.547 22.45-7.187 32.84-1.594C153.5 41.37 160 52.22 160 64.01v352h64C241.7 416 256 430.3 256 448z"></path>
-                            </svg></div>
-                    </div>
-                </div>
-            </div>
+    <div class="sort">
+        <div class="day">Today</div>
+        <div class="day active">Week</div>
+        <div class="day">Month</div>
+    </div>
+    <div class="profile">
+        <div class="person second">
+        <div class="num">2</div>
+        <i class="fas fa-caret-up"></i>
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" class="photo">
+        <p class="link">@dorisklien</p>
+        <p class="points">8023</p>
         </div>
-        <div class="col-md-6 col-xl-3 mb-4">
-            <div class="card shadow border-start-primary py-2">
-                <div class="card-body" style="padding-bottom: 0px;padding-top: 0px;">
-                    <div class="row align-items-center no-gutters">
-                        <div class="col me-2">
-                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span style="font-size: 12px;color: var(--bs-primary);">MOHAN</span></div>
-                            <div class="text-dark fw-bold h5 mb-0" style="margin-top: -6px;"><span style="font-size: 14px;"><i class="fas fa-caret-up" style="margin-right: 6px;color: var(--bs-success);font-size: 16px;"></i></span><span style="font-size: 14px;">64 %</span><span style="font-size: 10px;margin-left: 12px;color: var(--bs-gray-600);">1200 points</span></div>
-                        </div>
-                        <div class="col-auto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-96 0 512 512" width="1em" height="1em" fill="currentColor" data-bs-toggle="tooltip" data-bss-tooltip="" class="fa-2x" style="color: var(--bs-primary);font-size: 28px;margin-top: 4px;" title="Ceci est votre taux de réussite moyen calculé sur la base des 30 derniers jours">
-                                <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-                                <path d="M320 448c0 17.67-14.33 32-32 32H32c-13.08 0-24.83-7.953-29.7-20.09c-4.859-12.12-1.859-26 7.594-35.03l193.6-185.1c31.36-30.17 33.95-80 5.812-113.4c-14.91-17.69-35.86-28.12-58.97-29.38C127.4 95.83 105.3 103.9 88.53 119.9L53.52 151.7c-13.08 11.91-33.33 10.89-45.2-2.172C-3.563 136.5-2.594 116.2 10.48 104.3l34.45-31.3c28.67-27.34 68.39-42.11 108.9-39.88c40.33 2.188 78.39 21.16 104.4 52.03c49.8 59.05 45.2 147.3-10.45 200.8l-136 130H288C305.7 416 320 430.3 320 448z"></path>
-                            </svg></div>
-                    </div>
-                </div>
-            </div>
+        <div class="person first">
+        <div class="num">1</div>
+        <i class="fas fa-crown"></i>
+        <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="" class="photo main">
+        <p class="link">@sher234</p>
+        <p class="points">8122</p>
         </div>
-        <div class="col-md-6 col-xl-3 mb-4">
-            <div class="card shadow border-start-primary py-2">
-                <div class="card-body" style="padding-bottom: 0px;padding-top: 0px;">
-                    <div class="row align-items-center no-gutters">
-                        <div class="col me-2">
-                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span style="font-size: 12px;color: var(--bs-primary);">RAJ</span></div>
-                            <div class="text-dark fw-bold h5 mb-0" style="margin-top: -6px;"><span style="font-size: 14px;">12 000</span><a href="#" style="font-size: 10px;margin-left: 12px;text-decoration: none;"><i class="fas fa-arrow-right"></i>1000 points</a></div>
-                        </div>
-                        <div class="col-auto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-96 0 512 512" width="1em" height="1em" fill="currentColor" data-bs-toggle="tooltip" data-bss-tooltip="" class="fa-2x" style="color: var(--bs-green);font-size: 28px;margin-top: 4px;" title="Ceci est votre solde de CV que vous pouvez à tout moment déposer sur votre compte et utiliser pour acheter les pronostics de votre choix">
-                                <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-                                <path d="M320 344c0 74.98-61.02 136-136 136H103.6c-46.34 0-87.31-29.53-101.1-73.48c-5.594-16.77 3.484-34.88 20.25-40.47c16.75-5.609 34.89 3.484 40.47 20.25c5.922 17.77 22.48 29.7 41.23 29.7H184c39.7 0 72-32.3 72-72s-32.3-72-72-72H80c-13.2 0-25.05-8.094-29.83-20.41C45.39 239.3 48.66 225.3 58.38 216.4l131.4-120.4H32c-17.67 0-32-14.33-32-32s14.33-32 32-32h240c13.2 0 25.05 8.094 29.83 20.41c4.781 12.3 1.516 26.27-8.203 35.19l-131.4 120.4H184C258.1 208 320 269 320 344z"></path>
-                            </svg></div>
-                    </div>
-                </div>
-            </div>
+        <div class="person third">
+        <div class="num">3</div>
+        <i class="fas fa-caret-up"></i>
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922561.png" alt="" class="photo">
+        <p class="link">@lord_0980</p>
+        <p class="points">7884</p>
         </div>
     </div>
+    <div class="rest">
+        <div class="others flex">
+        <div class="rank">
+            <i class="fas fa-caret-up"></i>
+            <p class="num">4</p>
+        </div>
+        <div class="info flex">
+            <img src="https://cdn-icons-png.flaticon.com/512/4140/4140047.png" alt="" class="p_img">
+            <p class="link">@adam56</p>
+            <p class="points">7861</p>
+        </div>
+        </div>
+    </div>
+    </div>
+<!-- partial -->
+
 <!--  <table style="width:100%">
             <tr>
                 <td><canvas id="output" style="display: inline-flex;" ></canvas></td>
