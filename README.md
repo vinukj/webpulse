@@ -24,6 +24,9 @@ work on
 
 
 
+
 TODO:
 calculate FFT and the frequency bins based on the curFreq variable.
 remove view port for video / show as blurred view ( protect privacy)
+Use websockets for Fan emote
+Make it a PWA
