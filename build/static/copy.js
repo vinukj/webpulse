@@ -81,8 +81,8 @@ async function setupCamera() {
 async function loadCanvas(){
     // Set up canvas
     canvas = document.getElementById('output');
-    canvas.width = video.videoWidth * 0.40
-    canvas.height = video.videoHeight *0.40
+    canvas.width = video.videoWidth * 0.75
+    canvas.height = video.videoHeight *0.75
     ctx = canvas.getContext('2d');
     video.play();
 
