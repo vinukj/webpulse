@@ -17,8 +17,8 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
 
-    <script src="/static/fft.js"></script>
-    <script src="/static/copy.js"></script>
+    <script src="/build/static/fft.js"></script>
+    <script src="/build/static/copy.js"></script>
 </head>
 
 <body>
@@ -31,7 +31,18 @@
                    <div class="text-center d-flex flex-column justify-content-center align-items-center py-3">
                         <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-2 bs-icon" style="background: rgba(189,213,248,0);">
                             <!--<lottie-player src="https://assets1.lottiefiles.com/packages/lf20_ewpty5.json" mode="normal" autoplay="" loop="" style="transform: scale(1.70);"></lottie-player> -->
-                              <td><canvas id="output" style="display: inline-flex;" ></canvas></td>
+                       <!-- <td><canvas id="output" style="display: inline-flex;" ></canvas></td>  -->
+                        <table style="width:100%">
+            <tr>
+                <td><canvas id="output" style="display: inline-flex;" ></canvas></td>
+                
+              </tr>
+        </table>
+
+        <video hidden playsinline autoplay></video> 
+
+
+
                         </div>
                        
                       
@@ -131,7 +142,18 @@
             </div>
         </div>
     </div>
- 
+<!--  <table style="width:100%">
+            <tr>
+                <td><canvas id="output" style="display: inline-flex;" ></canvas></td>
+                
+              <td>
+              
+                     <p id="heartrate">Calibrating...</p>         
+                </td> 
+            </tr>
+        </table>
+
+        <video hidden playsinline autoplay></video> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
